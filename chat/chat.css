@@ -1,0 +1,96 @@
+.chat button {
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	background: transparent;
+	transition: 0.3s;
+}
+.chat a {
+	padding: 10px;
+	border-radius: 10px;
+	background: transparent;
+	transition: 0.3s;
+}
+
+.chat button:hover {
+	background: var(--hover)
+}
+.chat a:hover {
+	background: var(--hover)
+}
+
+.chat .header {
+	display: flex;
+	flex-direction: column;
+}
+
+.chat .header .title {
+	display: flex;
+	align-items: center;
+}
+.chat .header .title p {
+	font-size: 30px;
+	font-weight: bold;
+}
+.chat .header .title .camera {
+	margin-left: auto;
+}
+
+.chat .header .search {
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+	padding: 10px 30px;
+	background: var(--subbg);
+	margin: 10px 0;
+}
+.chat .header .search svg {
+	margin-right: 10px;
+}
+.chat .header .search input {
+	padding: 5px;
+	font-size: 20px;
+	width: 100%;
+	background: transparent;
+	color: var(--text);
+	outline: none;
+	border: none;
+}
+
+.chat .content {
+	display: flex;
+	flex-direction: column;
+}
+
+.chat .content .subnav {
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.chat .content .subnav button {
+	border: 3px solid var(--subbg);
+	font-weight: bold;
+	color: var(--subtext);
+	border-radius: 20px;
+}
+.chat .content .subnav .active {
+	background: var(--active);
+	color: var(--text);
+}
+
+.chat .content .archive {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.chat .content .archive p {
+	font-weight: bold;
+}
+.chat .content .archive svg {
+	margin-right: 20px;
+}
+.chat .content .archive .count {
+	margin-left: auto;
+}
+
