@@ -1,47 +1,1 @@
-import * as chatlist from "./chatlist/chatlist.js"
-
-export function subcontent() {	
-	const input = document.querySelector(".chat .header .search input")
-	
-	document.querySelector(".chat .content .subnav .all").addEventListener("click",() => {
-		input.placeholder = "Tanya Meta AI atau cari"
-		loadsubcontent("./chat/chatlist/chatlist.html")
-	})
-	document.querySelector(".chat .content .subnav .unread").addEventListener("click",() => {
-		input.placeholder = "Cari chat yang belum dibaca"
-		loadsubcontent("./chat/chatlist/chatlist.html")
-	})
-	document.querySelector(".chat .content .subnav .fav").addEventListener("click",() => {
-		loadsubcontent("./chat/fav/fav.html")
-	})
-}
-
-export function subnavactive() {
-	const subnav = document.querySelectorAll(".chat .content .subnav button")
-	const input = document.querySelector(".chat .header .search input")
-	
-	subnav.forEach((i,l) => {
-		i.addEventListener("click",() => {
-			input.value = ""
-			
-			for (let index = 0; index < subnav.length; index++) {
-				subnav[index].classList.remove("active")
-			}
-			
-			i.classList.add("active")
-		})
-	})
-}
-
-function loadsubcontent(path) {
-	fetch(path)
-		.then(res => res.text())
-		.then(html => {
-			document.querySelector(".chat .content .subcontent").innerHTML = html
-			if (path == "./chat/chatlist/chatlist.html") {
-				chatlist.read()
-				chatlist.unread()
-				chatlist.find()
-			}
-		})
-}
+import * as chatlist from "./chatlist/chatlist.js"export function subcontent() {		const input = document.querySelector(".chat .header .search input")	document.querySelector(".chat .content .subnav .all").addEventListener("click",() => {		input.placeholder = "Tanya Meta AI atau cari"		loadsubcontent("./chat/chatlist/chatlist.html")	})	document.querySelector(".chat .content .subnav .unread").addEventListener("click",() => {		input.placeholder = "Cari chat yang belum dibaca"		loadsubcontent("./chat/chatlist/chatlist.html")	})	document.querySelector(".chat .content .subnav .fav").addEventListener("click",() => {		loadsubcontent("./chat/fav/fav.html")	})}export function subnavactive() {	const subnav = document.querySelectorAll(".chat .content .subnav button")	const input = document.querySelector(".chat .header .search input")	subnav.forEach((i,l) => {		i.addEventListener("click",() => {			input.value = ""			for (let index = 0; index < subnav.length; index++) {				subnav[index].classList.remove("active")			}			i.classList.add("active")		})	})}async function loadsubcontent(path) {	const res = await fetch(path)	const html = await res.text()		document.querySelector(".chat .content .subcontent").innerHTML = html		if (path == "./chat/chatlist/chatlist.html") {		chatlist.read()		chatlist.unread()		chatlist.find()	}}
