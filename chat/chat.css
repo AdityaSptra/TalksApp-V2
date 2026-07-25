@@ -62,19 +62,19 @@
 	flex-direction: column;
 }
 
-.chat .content .subnav {
+.chat .content .subNav {
 	margin: 10px 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
-.chat .content .subnav button {
+.chat .content .subNav button {
 	border: 3px solid var(--subbg);
 	font-weight: bold;
 	color: var(--subtext);
 	border-radius: 20px;
 }
-.chat .content .subnav .active {
+.chat .content .subNav .active {
 	background: var(--active);
 	color: var(--text);
 }

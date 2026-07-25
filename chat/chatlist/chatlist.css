@@ -1,37 +1,37 @@
-.chat .content .subcontent .contact {
+.chat .content .subContent .contact {
 	display: flex;
 	align-items: center;
 }
 
-.chat .content .subcontent .contact img {
+.chat .content .subContent .contact img {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
 	margin-right: 15px;
 }
-.chat .content .subcontent .contact div {
+.chat .content .subContent .contact div {
 	display: flex;
 	flex-direction: column;
 }
 
-.chat .content .subcontent .contact .right {
+.chat .content .subContent .contact .right {
 	margin-left: auto;
 	align-items: center;
 }
 
-.chat .content .subcontent .contact div * {
+.chat .content .subContent .contact div * {
 	margin: 5px 0;
 }
-.chat .content .subcontent .contact div .name {
+.chat .content .subContent .contact div .name {
 	font-weight: bold;
 }
-.chat .content .subcontent .contact div .lastchat {
+.chat .content .subContent .contact div .lastchat {
 	color: var(--subtext);
 }
-.chat .content .subcontent .contact div .time {
+.chat .content .subContent .contact div .time {
 	color: var(--active);
 }
-.chat .content .subcontent .contact div .count {
+.chat .content .subContent .contact div .count {
 	width: 25px;
 	height: 25px;
 	text-align: center;
@@ -42,10 +42,10 @@
 	margin: 1px 0;
 }
 
-.chat .content .subcontent  .contact .read .time {
+.chat .content .subContent  .contact .read .time {
 	color: var(--subtext);
 }
-.chat .content .subcontent .contact .read .count {
+.chat .content .subContent .contact .read .count {
 	background: transparent;
 	color: transparent;
 }
