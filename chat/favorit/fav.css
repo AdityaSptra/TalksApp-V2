@@ -1,0 +1,30 @@
+.chat .content .favoritPage {
+	margin-top: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.chat .content .favoritPage img {
+	width: 100px;
+	height: 100px;
+}
+.chat .content .favoritPage * {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.chat .content .favoritPage .title {
+	font-size: 20px;
+	color: var(--subtext);
+}
+.chat .content .favoritPage .desc {
+	font-size: 15px;
+	color: var(--text);
+	text-align: center;
+}
+.chat .content .favoritPage button {
+	font-size: 15px;
+	color: var(--active);
+)
