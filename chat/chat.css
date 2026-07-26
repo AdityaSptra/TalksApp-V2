@@ -24,6 +24,10 @@
 	flex-direction: column;
 }
 
+.chat .header .active {
+	background: var(--hover)
+}
+
 .chat .header .title {
 	display: flex;
 	align-items: center;
@@ -55,6 +59,23 @@
 	color: var(--text);
 	outline: none;
 	border: none;
+}
+
+.chat .header .menulist {
+	display: none;
+	flex-direction: column;
+	border-radius: 10px;
+	overflow: hidden;
+	position: absolute;
+	background: var(--mainbg)
+}
+.chat .header .menudown {
+	display: flex;
+}
+.chat .header .menulist button {
+	padding: 10px 30px;
+	border-radius: 0;
+	text-align: left;
 }
 
 .chat .content {
