@@ -1,0 +1,151 @@
+.status a {
+	padding: 10px;
+	border-radius: 10px;
+	background: transparent;
+	transition: 0.3s;
+}
+.status a:hover {
+	background: var(--hover)
+}
+
+.status button {
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	background: transparent;
+	transition: 0.3s;
+}
+.status button:hover {
+	background: var(--hover)
+}
+
+.status .header {
+	flex-shrink: 0;
+	min-height: 0;
+	display: flex;
+	align-items: center;
+}
+
+.status .header p {
+	font-size: 30px;
+}
+.status .header .search {
+	margin-left: auto;
+}
+
+.status .header .menuList {
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	background: var(--mainbg);
+	border-radius: 10px;
+	overflow: hidden;
+}
+.status .header .menuDown {
+	display: flex;
+}
+
+.status .header .menuList button {
+	font-size: 15px;
+	padding: 10px 30px;
+	border-radius: 0;
+	text-align: left;
+}
+
+.status .content {
+	flex: 1;
+	min-height: 0;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+
+.status .content .title {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+.status .content .subTitle {
+	color: var(--subtext);
+	font-weight: bold;
+	margin: 10px 0;
+}
+.status .content .desc {
+	color: var(--subtext);
+	font-size: 15px;
+	margin: 10px 0;
+}
+
+.status .content .statusContent {
+	display: flex;
+	align-items: center;
+}
+
+.status .content .statusContent img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid var(--active)
+}
+.status .content .statusContent .data {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: space-around;
+	margin-left: 15px;
+}
+
+.status .content .statusContent .data .name {
+	font-weight: bold;
+}
+.status .content .statusContent .data .time {
+	color: var(--subtext);
+}
+
+.status .content .profile img {
+	border: none;
+}
+.status .content .read img {
+	border: 2px solid var(--subtext);
+}
+.status .content .group img {
+	border: none;
+}
+.status .content .group {
+	display: flex;
+	align-items: center;
+}
+.status .content .group .follow {
+	background: var(--active);
+	border-radius: 20px;
+	padding: 10px 30px;
+	margin-left: auto;
+	font-weight: bold;
+}
+.status .content .group .remove {
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.status .content .more, .status .content .create{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	border: 2px solid var(--subtext);
+	border-radius: 40px;
+	margin: 10px 0;
+}
+
+.status .content .more {
+	margin-top: 20px;
+}
+
+.status .content svg {
+	margin-right: 20px;
+}
+.status .content svg * {
+	stroke: var(--active);
+}
