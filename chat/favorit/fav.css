@@ -1,5 +1,5 @@
 .chat .content .favoritPage {
-	margin-top: auto;
+	margin: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
