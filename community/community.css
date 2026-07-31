@@ -1,0 +1,78 @@
+.community button {
+	background: transparent;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	transition: 0.3s;
+}
+.community button:hover {
+	background: var(--hover);
+}
+
+.community a {
+	padding: 10px;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+.community a:hover {
+	background: var(--hover);
+}
+
+.community .header {
+	display: flex;
+	align-items: center;
+}
+
+.community .header p {
+	font-size: 30px;
+}
+.community .header .menu {
+	margin-left: auto;
+}
+
+.community .header .setting {
+	position: absolute;
+	background: var(--mainbg);
+	display: none;
+	padding: 10px 50px;
+	border-radius: 10px;
+	font-size: 15px;
+}
+.community .header .setting:hover {
+	background: var(--hover);
+}
+.community .header .menuSetting {
+	display: flex;
+}
+
+.community .content {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.community .content * {
+	margin: 10px 0;
+}
+
+.community .content img {
+	width: 150px;
+	height: 150px;
+	margin: 0;
+}
+.community .content .title {
+	font-size: 20px;
+	font-weight: bold;
+}
+.community .content .desc {
+	font-size: 15px;
+	text-align: center;
+}
+
+.community .content .start {
+	background: var(--active);
+	color: var(--mainbg);
+	padding: 10px 80px;
+	border-radius: 20px;
+	font-weight: bold;
+}
