@@ -1,0 +1,114 @@
+.call button {
+	padding: 10px;
+	background: transparent;
+	border-radius: 10px;
+	border: none;
+	transition: 0.3s;
+} 
+ .call button:hover { 
+ 	background: var(--hover);
+}
+
+.call a {
+	padding: 10px;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+.call a:hover {
+	background: var(--hover);
+}
+
+.call .header {
+	flex-shrink: 0;
+	min-height: 0;
+	display: flex;
+	align-items: center;
+}
+
+.call .header p {
+	font-size: 30px;
+}
+.call .header .search {
+	margin-left: auto;
+}
+
+.call .header .menuList {
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	background: var(--mainbg);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.call .header .menuDown {
+	display: flex;
+}
+
+.call .header .menuList button {
+	padding: 10px 30px;
+	border-radius: 0;
+	text-align: left;
+	font-size: 15px;
+}
+
+.call .content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+
+.call .content .subNav { 
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+
+.call .content .subNav .btn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.call .content .subNav .btn .border {
+	padding: 15px;
+	border-radius: 50%;
+	background: var(--hover);
+	margin: 10px;
+}
+
+.call .content .new {
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.call .content .callList {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+}
+
+.call .content  .callList img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+.call .content .callList .data * {
+	margin: 10px 0;
+}
+.call .content .callList .data .name {
+	font-weight: bold;
+}
+.call .content .callList .data .time {
+	color: var(--subtext);
+}
+
+.call .content .callList .callUp {
+	margin-left: auto;
+}
